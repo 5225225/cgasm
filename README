@@ -1,0 +1,2 @@
+An assembly-like machine, written in C. All operators are 1 character long,
+which makes code golfing easy.
