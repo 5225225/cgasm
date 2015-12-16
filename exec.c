@@ -60,7 +60,7 @@ int main() {
                     read += 1;
                     if (isdigit(ch)) {
                         tv = (tv * 16) + (ch-48);
-                    } else if (ch >= 'A' & ch <= 'F') {
+                    } else if ((ch >= 'A') & (ch <= 'F')) {
                         tv = (tv * 16) + (ch-55);
                     } else { 
                         break;
@@ -79,7 +79,7 @@ int main() {
                     char ch = prog[pc + 5 - i];
                     if (isdigit(ch)) {
                         addr += (ch-48) * (1 << i*4);
-                    } else if ((ch) >= 'A' & ch <= 'F') {
+                    } else if ((ch >= 'A') & (ch <= 'F')) {
                         addr += (ch-55) * (1 << i*4);
                     }
                 }
