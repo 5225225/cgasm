@@ -12,7 +12,7 @@ int main() {
         int i = 0;
         while (ch != EOF && i < PROG_SIZE) {
             ch = getchar();
-            prog[i] = ch;
+            prog[i] = (char) ch;
             i++;
         }
     }
