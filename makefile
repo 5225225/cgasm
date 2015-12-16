@@ -1,5 +1,5 @@
 CC=clang
-CFLAGS=-Wall -Wextra -Werror -pedantic -o cgasm
+CFLAGS=-Werror -Weverything -Wno-sign-conversion -o cgasm
 
 all:
 	@$(CC) $(CFLAGS) exec.c
