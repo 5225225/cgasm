@@ -135,12 +135,12 @@ int main() {
                 printf("***REGISTERS***\n");
                 for (int i=0; i<26; i++) {
                     if (reg[i])
-                    printf("%c: %u\n", i+97, reg[i]);
+                        printf("%c: %u\n", i+97, reg[i]);
                 }
                 printf("***MEMORY ADDRESSES***\n");
                 for (int i=0; i<MEM_SIZE; i++) {
                     if (mem[i])
-                    printf("%d: %u\n", i, mem[i]);
+                        printf("%d: %u\n", i, mem[i]);
                 }
                 pc += 1;
             }
